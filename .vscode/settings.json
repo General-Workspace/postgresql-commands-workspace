@@ -7,7 +7,7 @@
       "askForPassword": true,
       "driver": "PostgreSQL",
       "name": "postgres",
-      "database": "talent_hive",
+      "database": "online_shop",
       "username": "postgres"
     }
   ]
