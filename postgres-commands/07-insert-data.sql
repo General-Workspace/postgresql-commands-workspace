@@ -23,21 +23,34 @@
 --         false
 --     )
 -- insert many data
-INSERT INTO employers (
-        company_name,
-        company_address,
-        yearly_revenue,
-        is_hiring
+-- INSERT INTO employers (
+--         company_name,
+--         company_address,
+--         yearly_revenue,
+--         is_hiring
+--     )
+-- VALUES (
+--         'NNPC Limited',
+--         'Betany Estate, FCT, Abuja',
+--         112673.675,
+--         TRUE
+--     ),
+--     (
+--         'ECOWAS, Nigeria',
+--         '34 Maryland Jest, FCT, Abuja',
+--         45290.83,
+--         FALSE
+--     );
+-- insert into conversations table
+INSERT INTO conversations (
+        talent_name,
+        employer_name,
+        message,
+        date_sent
     )
 VALUES (
+        'Aniebiet Afia',
         'NNPC Limited',
-        'Betany Estate, FCT, Abuja',
-        112673.675,
-        TRUE
-    ),
-    (
-        'ECOWAS, Nigeria',
-        '34 Maryland Jest, FCT, Abuja',
-        45290.83,
-        FALSE
-    );
+        'Test conversation',
+        DEFAULT
+    )
