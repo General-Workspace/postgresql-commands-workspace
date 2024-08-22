@@ -4,7 +4,9 @@ DROP TABLE conversations;
 CREATE TYPE employment_status AS ENUM('employed', 'unemployed', 'self-employed');
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
-    full_name VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    full_name VARCHAR(255) GENERATED ALWAYS AS (CONCAT(first_name, ' ', last_name)),
     email VARCHAR(255) UNIQUE NOT NULL,
     yearly_salary INT CHECK (yearly_salary > 0) NOT NULL DEFAULT NULL,
     current_status employment_status,
