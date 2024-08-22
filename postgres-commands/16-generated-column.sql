@@ -1,7 +1,7 @@
 DROP TABLE users;
 DROP TABLE employers;
 DROP TABLE conversations;
-CREATE TYPE employment_status AS ENUM('employed', 'unemployed', 'self-employed');
+-- CREATE TYPE employment_status AS ENUM('employed', 'unemployed', 'self-employed');
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
     first_name VARCHAR(255) NOT NULL,
@@ -27,3 +27,17 @@ CREATE TABLE IF NOT EXISTS conversations (
     message TEXT NOT NULL,
     date_sent TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+-- INSERT INTO users (
+--         first_name,
+--         last_name,
+--         email,
+--         yearly_salary,
+--         current_status
+--     )
+-- VALUES (
+--         'Aniebiet',
+--         'Afia',
+--         'aniebietafia@gmail.com',
+--         127000,
+--         'employed'
+--     )
