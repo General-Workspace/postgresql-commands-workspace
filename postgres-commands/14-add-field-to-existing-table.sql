@@ -1,0 +1,14 @@
+-- ALTER TABLE users
+-- ADD COLUMN email VARCHAR(255)
+-- SET NOT NULL;
+-- ALTER TABLE users
+-- ADD UNIQUE (email);
+-- UPDATE users
+-- SET email = 'aniebietafia@gmail.com'
+-- WHERE id = 1;
+-- UPDATE users
+-- SET email = 'aniebieta.fia@gmail.com'
+-- WHERE id = 3;
+-- UPDATE users
+-- SET email = 'aniebietafia@gmail.com'
+-- WHERE id = 4;
