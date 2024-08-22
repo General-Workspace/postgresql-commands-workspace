@@ -45,12 +45,10 @@
 INSERT INTO conversations (
         talent_name,
         employer_name,
-        message,
-        date_sent
+        message
     )
 VALUES (
         'Aniebiet Afia',
         'NNPC Limited',
-        'Test conversation',
-        DEFAULT
+        'Test conversation'
     )
